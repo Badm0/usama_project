@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG Women's Fashion Store — Elegance Starts With You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>✨ Special Discount on Selected Items — Now <strong>45,000 IQD</strong> (Was 50,000 IQD) &middot; Baghdad, Iraq</p>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-mark">UG</span>
+                <span class="logo-text">Women's Fashion</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#prices" class="nav-link">Prices</a>
+                <a href="#size-guide" class="nav-link">Size Guide</a>
+                <a href="#offer" class="nav-link">Special Offer</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="Open shopping bag">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                        <path d="M3 6h18"></path>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-label">Bag</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="eyebrow">Welcome to UG</span>
+                <h1>UG Women's Fashion Store</h1>
+                <p class="hero-subtitle">
+                    Welcome to <strong>UG Women's Fashion</strong>. We offer a beautiful collection of women's clothes with modern and elegant designs.
+                </p>
+                <p class="hero-tagline"><em>Elegance starts with you!</em></p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary">Shop Collection</a>
+                    <a href="#offer" class="btn btn-outline">View Special Offer</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">Curated Collections</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Modern Quality</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">Baghdad</span>
+                        <span class="stat-label">Fast Local Delivery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-image-frame">
+                    <img src="images/hero.jpg" alt="UG Women's Fashion Editorial Look">
+                    <div class="hero-badge">
+                        <span class="badge-title">New Season</span>
+                        <span class="badge-sub">Modern &amp; Elegant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-label reveal">
+                <span class="eyebrow">Our Story</span>
+                <h2>About Our Store</h2>
+            </div>
+            <div class="about-body reveal">
+                <p class="lead-text">
+                    UG is a women's clothing store. Our goal is to provide beautiful clothes with good quality and affordable prices.
+                </p>
+                <blockquote class="about-quote">
+                    &ldquo;Elegance starts with you!&rdquo;
+                </blockquote>
+                <div class="about-pillars">
+                    <div class="pillar">
+                        <span class="pillar-dot"></span>
+                        <span>Curated in Baghdad, Iraq</span>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-dot"></span>
+                        <span>Everyday &amp; Evening Wear</span>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-dot"></span>
+                        <span>Affordable Luxury</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="section collections-section" id="collections">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Explore Styles</span>
+                <h2>Our Collections</h2>
+                <p>Select a category to browse our signature pieces.</p>
+            </div>
+
+            <div class="collections-grid reveal">
+                <button class="collection-card active" data-filter="all">
+                    <span class="collection-icon">✦</span>
+                    <h3>All Pieces</h3>
+                    <span class="collection-meta">Full Catalog</span>
+                </button>
+                <button class="collection-card" data-filter="dresses">
+                    <span class="collection-icon">👗</span>
+                    <h3>Dresses</h3>
+                    <span class="collection-meta">Evening &amp; Midi</span>
+                </button>
+                <button class="collection-card" data-filter="casual">
+                    <span class="collection-icon">🧥</span>
+                    <h3>Casual Clothes</h3>
+                    <span class="collection-meta">Effortless Chic</span>
+                </button>
+                <button class="collection-card" data-filter="elegant">
+                    <span class="collection-icon">✨</span>
+                    <h3>Elegant Clothes</h3>
+                    <span class="collection-meta">Refined Tailoring</span>
+                </button>
+                <button class="collection-card" data-filter="bags">
+                    <span class="collection-icon">👜</span>
+                    <h3>Bags</h3>
+                    <span class="collection-meta">Everyday Luxury</span>
+                </button>
+                <button class="collection-card" data-filter="accessories">
+                    <span class="collection-icon">💍</span>
+                    <h3>Accessories</h3>
+                    <span class="collection-meta">Finishing Touches</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Featured Pieces</span>
+                <h2>Our Products</h2>
+                <p>Handpicked designs crafted for comfort, confidence, and timeless style.</p>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <article class="product-card reveal" data-category="dresses elegant" data-id="1" data-name="Elegant Dress" data-price="45000" data-image="images/dress.jpg" data-desc="Beautiful dress with an elegant design. Flowing rose-champagne silhouette tailored for special occasions and modern grace.">
+                    <div class="product-media">
+                        <span class="product-tag sale">Special Offer</span>
+                        <img src="images/dress.jpg" alt="Elegant Dress">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="1">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Dresses &middot; Elegant</span>
+                        <h3>1. Elegant Dress</h3>
+                        <p class="product-desc">Beautiful dress with an elegant design.</p>
+                        <div class="product-sizes">
+                            <span class="size-label">Size:</span>
+                            <button class="size-pill active" data-size="Small">S</button>
+                            <button class="size-pill" data-size="Medium">M</button>
+                            <button class="size-pill" data-size="Large">L</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-group">
+                                <span class="price-old">50,000 IQD</span>
+                                <span class="price-current">45,000 IQD</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card reveal" data-category="casual" data-id="2" data-name="Casual Outfit" data-price="38000" data-image="images/casual.jpg" data-desc="Comfortable and modern casual clothes. Breathable tailored linen-blend ensemble designed for effortless everyday sophistication.">
+                    <div class="product-media">
+                        <span class="product-tag">Bestseller</span>
+                        <img src="images/casual.jpg" alt="Casual Outfit">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="2">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Casual Clothes</span>
+                        <h3>2. Casual Outfit</h3>
+                        <p class="product-desc">Comfortable and modern casual clothes.</p>
+                        <div class="product-sizes">
+                            <span class="size-label">Size:</span>
+                            <button class="size-pill active" data-size="Small">S</button>
+                            <button class="size-pill" data-size="Medium">M</button>
+                            <button class="size-pill" data-size="Large">L</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-group">
+                                <span class="price-current">38,000 IQD</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card reveal" data-category="bags accessories" data-id="3" data-name="Women's Bag" data-price="32000" data-image="images/bag.jpg" data-desc="A beautiful bag for everyday use. Structured caramel-tan silhouette with brushed gold hardware and spacious interior.">
+                    <div class="product-media">
+                        <span class="product-tag">Everyday Chic</span>
+                        <img src="images/bag.jpg" alt="Women's Bag">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" data-product-id="3">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Bags &middot; Accessories</span>
+                        <h3>3. Women's Bag</h3>
+                        <p class="product-desc">A beautiful bag for everyday use.</p>
+                        <div class="product-sizes">
+                            <span class="size-label">Size:</span>
+                            <button class="size-pill active" data-size="One Size">One Size</button>
+                        </div>
+                        <div class="product-footer">
+                            <div class="price-group">
+                                <span class="price-current">32,000 IQD</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Bag</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="section offer-section" id="offer">
+        <div class="container">
+            <div class="offer-card reveal">
+                <div class="offer-content">
+                    <span class="offer-badge">Special Discount!</span>
+                    <h2>Special Offer on Selected Products</h2>
+                    <p>Get a special offer on selected products. Elevate your wardrobe with UG's signature elegance at an exclusive price.</p>
+                    <div class="offer-pricing">
+                        <div class="offer-price-item">
+                            <span class="offer-price-label">Old Price</span>
+                            <del class="offer-old">50,000 IQD</del>
+                        </div>
+                        <div class="offer-arrow">→</div>
+                        <div class="offer-price-item">
+                            <span class="offer-price-label">New Price</span>
+                            <strong class="offer-new">45,000 IQD</strong>
+                        </div>
+                    </div>
+                    <button class="btn btn-light" id="claimOfferBtn">Add Elegant Dress — 45,000 IQD</button>
+                </div>
+
+                <div class="offer-timer-box">
+                    <span class="timer-heading">Offer Ends In</span>
+                    <div class="countdown" id="countdown">
+                        <div class="time-unit">
+                            <span id="days">02</span>
+                            <small>Days</small>
+                        </div>
+                        <div class="time-unit">
+                            <span id="hours">14</span>
+                            <small>Hours</small>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes">36</span>
+                            <small>Mins</small>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds">00</span>
+                            <small>Secs</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose UG Section -->
+    <section class="section why-section" id="why-ug">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">The UG Promise</span>
+                <h2>Why Choose UG?</h2>
+            </div>
+
+            <ol class="why-grid reveal">
+                <li class="why-card">
+                    <span class="why-num">01</span>
+                    <h3>Beautiful Designs</h3>
+                    <p>Thoughtfully curated silhouettes that blend timeless femininity with contemporary trends.</p>
+                </li>
+                <li class="why-card">
+                    <span class="why-num">02</span>
+                    <h3>Good Quality</h3>
+                    <p>Carefully selected fabrics and clean stitching made to feel as good as they look.</p>
+                </li>
+                <li class="why-card">
+                    <span class="why-num">03</span>
+                    <h3>Affordable Prices</h3>
+                    <p>Transparent IQD pricing so modern elegance stays accessible for every wardrobe.</p>
+                </li>
+                <li class="why-card">
+                    <span class="why-num">04</span>
+                    <h3>Modern Fashion</h3>
+                    <p>Fresh seasonal drops inspired by global runway aesthetics tailored for everyday wear.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Prices & Size Guide Section -->
+    <section class="section tables-section" id="prices">
+        <div class="container tables-grid">
+            <!-- Our Prices -->
+            <div class="table-card reveal">
+                <span class="eyebrow">Transparent Pricing</span>
+                <h2>Our Prices</h2>
+                <div class="table-wrap">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Elegant Dress</td>
+                                <td><strong>45,000 IQD</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Casual Outfit</td>
+                                <td><strong>38,000 IQD</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Women's Bag</td>
+                                <td><strong>32,000 IQD</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Size Guide -->
+            <div class="table-card reveal" id="size-guide">
+                <span class="eyebrow">Find Your Fit</span>
+                <h2>Size Guide</h2>
+                <div class="table-wrap">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Description</th>
+                                <th>EU / Fit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Small</strong></td>
+                                <td>Small Size</td>
+                                <td>36 &ndash; 38</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Medium</strong></td>
+                                <td>Medium Size</td>
+                                <td>38 &ndash; 40</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Large</strong></td>
+                                <td>Large Size</td>
+                                <td>42 &ndash; 44</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info reveal">
+                <span class="eyebrow">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Have a question about sizing, colors, or delivery in Baghdad? We'd love to hear from you.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">Store Name</span>
+                        <strong>UG Women's Fashion</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <strong>Baghdad, Iraq</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Instagram</span>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                            Visit Instagram ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="e.g., Sara Ahmed" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone or Instagram Handle</label>
+                    <input type="text" id="phone" placeholder="e.g., 0770 000 0000 or @username" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Ask about a product, size, or order..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-mark">UG</span>
+                <h2>Thank You For Visiting UG</h2>
+                <p><em>Elegance starts with you!</em></p>
+            </div>
+            <div class="footer-bottom">
+                <small>&copy; 2026 UG Women's Fashion Store &middot; Baghdad, Iraq</small>
+                <div class="footer-links">
+                    <a href="#home">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slide-Over Shopping Bag Drawer -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <h3>Your Shopping Bag</h3>
+            <button class="icon-close" id="closeCart" aria-label="Close bag">&times;</button>
+        </div>
+        <div class="drawer-body" id="cartItems">
+            <!-- Populated by JS -->
+        </div>
+        <div class="drawer-footer">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong id="cartTotal">0 IQD</strong>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">Complete Order</button>
+        </div>
+    </aside>
+
+    <!-- Quick View Modal -->
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal" id="quickViewModal" aria-hidden="true">
+        <button class="icon-close modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+        <div class="modal-body" id="quickViewBody">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
